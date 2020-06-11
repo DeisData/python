@@ -13,3 +13,6 @@ Access the [Zoom Classroom link and Session Recordings here](https://docs.google
 - Session 4 (Jul 09): Loops
 - Session 5 (Jul 16): Conditionals
 - Session 6 (Jul 30): Writing Functions
+
+## Viewing materials
+Use [Jupyter nbViewer](https://nbviewer.jupyter.org/) to easily view Jupyter Notebook files by supplying the github link to session .ipynb files. 
