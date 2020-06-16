@@ -15,4 +15,5 @@ Access the [Zoom Classroom link and Session Recordings here](https://docs.google
 - Session 6 (Jul 30): Writing Functions
 
 ## Viewing materials
-Use [Jupyter nbViewer](https://nbviewer.jupyter.org/) to easily view Jupyter Notebook files by supplying the github link to session .ipynb files. 
+Both GitHub and [Jupyter nbViewer](https://nbviewer.jupyter.org/) can be used to easily view Jupyter Notebook files by supplying the github link to session .ipynb files. 
+To work along, launch Jupyter Notebook from your Anaconda Navigator.
