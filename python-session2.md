@@ -1,5 +1,8 @@
 # Python Programming Session 2 Instructions
 
+[Zoom Classroom Link](https://docs.google.com/document/d/18TwHdTBUU34PNF8Vz2YYWbmME4tS3NS7Ugu5NjaMmBo/edit?usp=sharing)
+
+
 To prepare for today, please download 2 gapminder datasets to a gapminder_data folder on your Desktop. 
 To download an individual file from github, open it, click the [RAW] button, and right-click "Save Link As."
 - [gapminder_gdp_oceania.csv](https://github.com/DeisData/python/blob/master/gapminder_gdp_oceania.csv)
