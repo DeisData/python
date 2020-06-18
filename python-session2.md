@@ -10,7 +10,7 @@ To download an individual file from github, open it, click the [RAW] button, and
  
 This week we will be coding in Spyder launched through Anaconda Navigator, instead of working in a Jupyter Notebook.
 
-Code and comments will be shared after the session!
+Code and comments will be shared after the session!  A "working script" of comments is [here](https://github.com/DeisData/python/blob/master/python-working2.py).
 
 ## Questions of the Day:
 - How can I use built-in functions?
