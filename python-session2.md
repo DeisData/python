@@ -1,6 +1,8 @@
 # Python Programming Session 2 Instructions
 
-[Zoom Classroom Link](https://docs.google.com/document/d/18TwHdTBUU34PNF8Vz2YYWbmME4tS3NS7Ugu5NjaMmBo/edit?usp=sharing)
+[Zoom Classroom Link and Recordings](https://docs.google.com/document/d/18TwHdTBUU34PNF8Vz2YYWbmME4tS3NS7Ugu5NjaMmBo/edit?usp=sharing)
+
+[Today's script](https://github.com/DeisData/python/blob/master/python-session2.py)
 
 
 To prepare for today, please download 2 gapminder datasets to a gapminder_data folder on your Desktop. 
