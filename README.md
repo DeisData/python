@@ -9,9 +9,9 @@ Access the [Zoom Classroom link and Session Recordings here](https://docs.google
 - Get started by [downloading and installing Anaconda](https://docs.google.com/document/d/1Vh0qmWvh2mXWukiQh9d5mNgfPNvkJDLb4dNwAsGGY2A/edit?usp=sharing).
 - Session 1 (Jun 11): [Python setup and fundamentals](https://github.com/DeisData/python/blob/master/python-session1.ipynb)
 - Session 2 (Jun 18): [Reading in and analyzing data.](https://github.com/DeisData/python/blob/master/python-session2.md) 
-- Session 3 (Jun 25): Data visualization
-- Session 4 (Jul 09): Loops
-- Session 5 (Jul 16): Conditionals
+- Session 3 (Jun 25): Data visualization [[script](https://github.com/DeisData/python/blob/master/python-session3.ipynb) / [Planets.csv](https://github.com/DeisData/python/blob/master/Planets.csv) / [gapminder.csv](https://github.com/DeisData/python/blob/master/gapminder.csv)]
+- Session 4 (Jul 09): Statistics and Model Fitting
+- Session 5 (Jul 16): Loops and Conditionals
 - Session 6 (Jul 30): Writing Functions
 
 ## Viewing materials
