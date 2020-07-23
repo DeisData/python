@@ -1,8 +1,6 @@
 # Python Programming Workshop
 This repository contains the scripts and datasets used in the Python Programming workshops through Brandeis Library Data Services.
 
-Brandeis community members [register here](https://calendar.library.brandeis.edu/calendar/workshops/pythonprog2020).
-
 Access the [Zoom Classroom link and Session Recordings here](https://docs.google.com/document/d/18TwHdTBUU34PNF8Vz2YYWbmME4tS3NS7Ugu5NjaMmBo/edit?usp=sharing). This workshop meets on Thursdays at 1pm ET through July 30th.
 
 ## Materials
