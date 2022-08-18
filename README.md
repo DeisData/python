@@ -1,9 +1,6 @@
 # Python Programming Workshop
 This repository contains the scripts and datasets used in the Python Programming workshops through Brandeis Library Data Services.
 
-Access the [Session Recordings here](https://docs.google.com/document/d/18TwHdTBUU34PNF8Vz2YYWbmME4tS3NS7Ugu5NjaMmBo/edit?usp=sharing). 
-This summer 2020 workshop has ended.  
-
 ## Materials
 - Get started by [downloading and installing Anaconda](https://docs.google.com/document/d/1Vh0qmWvh2mXWukiQh9d5mNgfPNvkJDLb4dNwAsGGY2A/edit?usp=sharing).
 - Session 1: [Python setup and fundamentals](https://github.com/DeisData/python/blob/master/python-session1.ipynb)
