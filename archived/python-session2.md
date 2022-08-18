@@ -2,17 +2,17 @@
 
 [Zoom Classroom Link and Recordings](https://docs.google.com/document/d/18TwHdTBUU34PNF8Vz2YYWbmME4tS3NS7Ugu5NjaMmBo/edit?usp=sharing)
 
-[Today's script](https://github.com/DeisData/python/blob/master/python-session2.py)
+[Today's script](https://github.com/DeisData/python/blob/master/archived/archived/python-session2.py)
 
 
 To prepare for today, please download 2 gapminder datasets to a gapminder_data folder on your Desktop. 
 To download an individual file from github, open it, click the [RAW] button, and right-click "Save Link As."
-- [gapminder_gdp_oceania.csv](https://github.com/DeisData/python/blob/master/gapminder_gdp_oceania.csv)
-- [gapminder_gdp_europe.csv](https://github.com/DeisData/python/blob/master/gapminder_gdp_europe.csv)
+- [gapminder_gdp_oceania.csv](https://github.com/DeisData/python/blob/data/archived/gapminder_gdp_oceania.csv)
+- [gapminder_gdp_europe.csv](https://github.com/DeisData/python/blob/data/archived/gapminder_gdp_europe.csv)
  
 This week we will be coding in Spyder launched through Anaconda Navigator, instead of working in a Jupyter Notebook.
 
-Code and comments will be shared after the session!  A "working script" of comments is [here](https://github.com/DeisData/python/blob/master/python-working2.py).
+Code and comments will be shared after the session!  A "working script" of comments is [here](https://github.com/DeisData/python/blob/master/archived/python-working2.py).
 
 ## Questions of the Day:
 - How can I use built-in functions?
