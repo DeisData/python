@@ -27,5 +27,9 @@ This repository contains the scripts and datasets used in the Python Programming
 - Both GitHub and [Jupyter nbViewer](https://nbviewer.jupyter.org/) can be used to easily view Jupyter Notebook files by supplying the github link to session .ipynb files. 
 - To work along, launch Jupyter Notebook (or Spyder for .py scripts) from your Anaconda Navigator.  
 
+The following files have been sourced from the Portal Project Teaching Database.
+The original data files can be found at: https://figshare.com/articles/Portal_Project_Teaching_Database/1314459
 
+- `data/surveys.csv`
+- `data/species.csv`
 
