@@ -369,11 +369,11 @@ Often in coding, we want one thing to happen if an expression is true, and anoth
 ```python
 x = 23
 
-if x < 20:
+if x < 20: # if x less than 20; False
     
     print('Less than 20')
 
-else:
+else: # x greater or equal to 20 
     
     print('Greater than 20')
 ```
@@ -391,15 +391,15 @@ Again, these options are all mutually exclusive. If the `elif` code is run, that
 ```python
 y = 101
 
-if y < 100:
+if y < 100: # y less than 100
     
     print('y is less than 100')
 
-elif y > 100 and y < 200:
+elif y < 200: # y is 100-200 (excluding 200)
     
     print('y ia between 100 and 200')
 
-else:
+else: # y is 200 or larger
     
     print('y is a big number')
 
@@ -418,7 +418,7 @@ if y < 100:
     
     print('y is less than 100')
 
-elif y > 100 and y < 200:
+elif y < 200:
     
     print('y ia between 100 and 200')
 
