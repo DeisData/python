@@ -12,6 +12,7 @@ import pandas as pd
 
 ### Plotting from a data frame
 
+Before we can plot, we need to read in our data, the `gapminder.csv` data set.
 
 ```python
 df = pd.read_csv("https://raw.githubusercontent.com/DeisData/python/master/data/gapminder.csv") # read in data
