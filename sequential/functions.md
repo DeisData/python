@@ -94,10 +94,16 @@ average([])
     ---------------------------------------------------------------------------
 
     ZeroDivisionError                         Traceback (most recent call last)
-    average([])
-        s = sum(values) # sum
-        n = len(values) # number of vals
-        ----> return s/n
+
+    /Users/fordfishman/GitHub/python/sequential/functions.ipynb Cell 14' in <cell line: 1>()
+    ----> <a href='vscode-notebook-cell:/Users/fordfishman/GitHub/python/sequential/functions.ipynb#ch0000013?line=0'>1</a> average([])
+
+
+    /Users/fordfishman/GitHub/python/sequential/functions.ipynb Cell 12' in average(values)
+          <a href='vscode-notebook-cell:/Users/fordfishman/GitHub/python/sequential/functions.ipynb#ch0000011?line=1'>2</a> s = sum(values) # sum
+          <a href='vscode-notebook-cell:/Users/fordfishman/GitHub/python/sequential/functions.ipynb#ch0000011?line=2'>3</a> n = len(values) # number of vals
+    ----> <a href='vscode-notebook-cell:/Users/fordfishman/GitHub/python/sequential/functions.ipynb#ch0000011?line=3'>4</a> return s/n
+
 
     ZeroDivisionError: division by zero
 
@@ -147,14 +153,6 @@ def another_function
     print("So they are usually not too hard to fix.")
 ```
 
-
-      Input In [70]
-        def another_function
-                            ^
-    SyntaxError: invalid syntax
-
-
-
 #### Question 2 
 What does this code return?
 
@@ -165,9 +163,6 @@ def report(pressure):
 
 print('calling', report, 22.5)
 ```
-
-    calling <function report at 0x7fb43777e5e0> 22.5
-
 
 ## Default values
 
@@ -312,7 +307,7 @@ for filename in filenames:
 
 
     
-![png](/images/sequential_figures/functions_39_1.png)
+![png](functions_files/functions_39_1.png)
     
 
 
@@ -321,7 +316,7 @@ for filename in filenames:
 
 
     
-![png](/images/sequential_figures/functions_39_3.png)
+![png](functions_files/functions_39_3.png)
     
 
 
@@ -330,7 +325,7 @@ for filename in filenames:
 
 
     
-![png](/images/sequential_figures/functions_39_5.png)
+![png](functions_files/functions_39_5.png)
     
 
 
@@ -367,7 +362,7 @@ for base in dna_sequence1:
     elif base == 'C':
         Cs1 += 1
     
-print("GC%:", (Gs1+Cs1)/(Gs1+Cs1+Ts1+Cs1))
+print("GC%:", (Gs1+Cs1)/(Gs1+Cs1+Ts1+As1))
 
 # sequence 2
 As2 = 0
@@ -386,7 +381,7 @@ for base in dna_sequence2:
     elif base == 'C':
         Cs2 += 1
     
-print("GC%:", (Gs2+Cs2)/(Gs2+Cs2+Ts2+Cs2))
+print("GC%:", (Gs2+Cs2)/(Gs2+Cs2+Ts2+As2))
 
 
 # sequence 3
@@ -406,7 +401,7 @@ for base in dna_sequence3:
     elif base == 'C':
         Cs3 += 1
     
-print("GC%:", (Gs3+Cs3)/(Gs3+Cs3+Ts3+Cs3))
+print("GC%:", (Gs3+Cs3)/(Gs3+Cs3+Ts3+As3))
 
 # sequence 4
 As4 = 0
@@ -425,13 +420,13 @@ for base in dna_sequence4:
     elif base == 'C':
         Cs4 += 1
     
-print("GC%:", (Gs4+Cs4)/(Gs4+Cs4+Ts4+Cs4))
+print("GC%:", (Gs4+Cs4)/(Gs4+Cs4+Ts4+As4))
 ```
 
-    GC%: 0.5376344086021505
-    GC%: 0.5128205128205128
-    GC%: 0.43478260869565216
-    GC%: 0.5157894736842106
+    GC%: 0.5
+    GC%: 0.6
+    GC%: 0.4
+    GC%: 0.49
 
 
 ## Add documentation to your functions
@@ -503,6 +498,18 @@ better_func('Not a number')
     ---------------------------------------------------------------------------
 
     AssertionError                            Traceback (most recent call last)
+
+    /Users/fordfishman/GitHub/python/sequential/functions.ipynb Cell 51' in <cell line: 5>()
+          <a href='vscode-notebook-cell:/Users/fordfishman/GitHub/python/sequential/functions.ipynb#ch0000051?line=1'>2</a>     assert isinstance(x, int), x + " is not int"
+          <a href='vscode-notebook-cell:/Users/fordfishman/GitHub/python/sequential/functions.ipynb#ch0000051?line=2'>3</a>     print(x)
+    ----> <a href='vscode-notebook-cell:/Users/fordfishman/GitHub/python/sequential/functions.ipynb#ch0000051?line=4'>5</a> better_func('Not a number')
+
+
+    /Users/fordfishman/GitHub/python/sequential/functions.ipynb Cell 51' in better_func(x)
+          <a href='vscode-notebook-cell:/Users/fordfishman/GitHub/python/sequential/functions.ipynb#ch0000051?line=0'>1</a> def better_func(x:int):
+    ----> <a href='vscode-notebook-cell:/Users/fordfishman/GitHub/python/sequential/functions.ipynb#ch0000051?line=1'>2</a>     assert isinstance(x, int), x + " is not int"
+          <a href='vscode-notebook-cell:/Users/fordfishman/GitHub/python/sequential/functions.ipynb#ch0000051?line=2'>3</a>     print(x)
+
 
     AssertionError: Not a number is not int
 
