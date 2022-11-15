@@ -947,6 +947,8 @@ plotfit(groupmeans)
     
 
 
+We can check the parameters of our fitted model to see the main effect of each region. 
+
 
 ```python
 groupmeans.params
@@ -960,6 +962,64 @@ groupmeans.params
     region[Asia]       4.775577
     region[Europe]     2.035682
     dtype: float64
+
+
+
+An ANOVA can be used to test if these effects are significant. 
+
+
+```python
+sm.stats.anova_lm(groupmeans)
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>df</th>
+      <th>sum_sq</th>
+      <th>mean_sq</th>
+      <th>F</th>
+      <th>PR(&gt;F)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>region</th>
+      <td>4.0</td>
+      <td>3927.702839</td>
+      <td>981.925710</td>
+      <td>655.512121</td>
+      <td>2.604302e-105</td>
+    </tr>
+    <tr>
+      <th>Residual</th>
+      <td>178.0</td>
+      <td>266.635461</td>
+      <td>1.497952</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
 
 
@@ -986,7 +1046,7 @@ print(surviving.params)
 
 
     
-![png](../images/stats_files/stats_38_1.png)
+![png](../images/stats_files/stats_41_1.png)
     
 
 
@@ -1066,67 +1126,5 @@ surviving.summary()
   <th>Kurtosis:</th>      <td> 4.965</td> <th>  Cond. No.          </th> <td>1.41e+03</td>
 </tr>
 </table><br/><br/>Notes:<br/>[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.<br/>[2] The condition number is large, 1.41e+03. This might indicate that there are<br/>strong multicollinearity or other numerical problems.
-
-
-
-We can also use the `anova_lm()` function with our model to estimate the importance of factors in our model.
-
-
-```python
-sm.stats.anova_lm(surviving, typ=2)
-```
-
-
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>sum_sq</th>
-      <th>df</th>
-      <th>F</th>
-      <th>PR(&gt;F)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>region</th>
-      <td>973.988539</td>
-      <td>4.0</td>
-      <td>253.819435</td>
-      <td>3.707717e-72</td>
-    </tr>
-    <tr>
-      <th>life_expectancy</th>
-      <td>96.833677</td>
-      <td>1.0</td>
-      <td>100.938638</td>
-      <td>4.459475e-19</td>
-    </tr>
-    <tr>
-      <th>Residual</th>
-      <td>169.801784</td>
-      <td>177.0</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-  </tbody>
-</table>
-</div>
 
 
