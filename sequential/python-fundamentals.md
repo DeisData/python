@@ -409,13 +409,33 @@ print(5%3)
     2
 
 
-### Question 6.  Choose a type (int, float, str) that each of these descriptions should be:
+### Question 6: 
+Choose a type (int, float, str) that each of these descriptions should be:
 - Time elapsed from the start of the year until now in days.
 - Serial cod of a piece of lab equipment
 - A lab specimen's age
 
 
-## Challenge Project 
+### Question 7: Quadratic formula 
+
+A quadratic equation has the following form:
+
+$$0 = ax^2 + bx + c$$
+
+We can use the quadratic forumula (below) to find the roots of a quadratic equation.
+
+$$x = \frac{-b\pm\sqrt{b^2-4ac}}{2a}$$
+
+Create variables $a$, $b$, and $c$ with the value of $4$, $-25$, and $20$, respectively.
+
+Calculate the values of $x$ for a quadratic equation with $a=4$, $b=-25$, and $c = 20$. Remember to calculate the values for both plus and minus ($\pm$). 
+
+```python
+# your code below:
+
+```
+
+### Question 8
 
 
 

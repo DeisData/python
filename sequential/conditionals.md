@@ -290,7 +290,7 @@ print(not (2 == 3 or 2 == 2)) # parentheses matter!
     False
 
 
-#### Question: Boolean expressions
+### Question: Boolean expressions
 
 Does the following code evalutate as `True` or `False`?
 
@@ -449,20 +449,81 @@ else:
 
     That belongs in a museum!!
 
+## Using data types in conditionals
 
-#### Question: Conditionals
+We can also use data types as conditions in if statements.
+
+```python
+should_be_num = 'banana'
+
+if type(should_be_num)!=int or type(should_be_num)!=float:
+    print('need input to be a number')
+
+else:
+    print(10**should_be_num)
+```
+
+
+### Question: Conditionals
 
 Write code that will prints the square root of `x` if x is larger than 20 and `0` if x is less than `0`.
 
 **Bonus**: Print an error message if x is a string or a boolean. 
-
-*Hint*: Use `type(x)` or `isinstance(x, DATA_TYPE)`.
 
 
 
 ```python
 ### Your code here:
 ```
+
+## Nested conditionals
+
+We can also put if statements inside of other if statements. Many times, these are unnecesary and can be replaced by `elif` statements, but not always.
+
+Make sure to add more indentation for the second layer of if statements.
+
+```python
+n = 22222 # some integer
+
+if n < 0: # if n is negative
+    
+    if n % 2 == 0:
+        print("n is a negative even integer")
+    
+    elif n % 2 == 1:
+        print("n is a negative odd integer")
+    
+    else:
+        print("n is a negative number")
+
+elif n > 0: # 
+    
+    if n % 2 == 0:
+        print("n is a positive even integer")
+    
+    elif n % 2 == 1:
+        print("n is a positive odd integer")
+    
+    else:
+        print("n is a positive number")
+
+else:
+    
+    print("n is zero")
+```
+
+### Question
+
+Create a list called `my_list` with four items in it. Create a variable called `x` with some value.
+
+Create a series of conditionals that check to see if the value in `x` is in `my_list`. 
+
+If this is the case, print out different text depending on what index the item is at in the list.
+
+0. "From zero to hero"
+1. "One is the loneliest number."
+2. "Two's company."
+3. "Three's a crowd."
 
 ## Resources
 - [Software Carpentry](https://swcarpentry.github.io/python-novice-inflammation/07-cond/index.html)
