@@ -463,6 +463,8 @@ else:
     print(10**should_be_num)
 ```
 
+    need input to be a number
+
 
 ### Question: Conditionals
 
