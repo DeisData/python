@@ -338,7 +338,7 @@ plt.show()
     
 
 
-#### Question
+### Question
 
 Plot histograms of `population` for each region in the year 2000 in the `gapminder.csv` data set. You can do this in one or multiple panels.
 
