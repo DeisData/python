@@ -4,7 +4,7 @@
 \
 
 ## Question 1: Boolean expressions
-Does the following code evalutate as `True` or `False`?
+Does the following code evaluate as `True` or `False`?
 
 ```python
 n1 = 45
