@@ -90,7 +90,7 @@ Then, we make a plot just as we did before, but instead of using `ax.hist()`, we
 
 ```python
 # subset data
-df_jm = df.loc[ df['country']=='Jamaica', :]
+df_jm = df[df['country']=='Jamaica']
 # create plot
 figure, ax = plt.subplots()
 ax.plot(df_jm['year'], df_jm['life_expectancy'], color='#333') # a dark charcoal
@@ -110,7 +110,7 @@ You can put two lines from separate data sources on the same plot, as well, just
 
 
 ```python
-df_cb = df.loc[ df['country']=='Cuba', :]
+df_cb = df[df['country']=='Cuba']
 figure, ax = plt.subplots()
 # draw two lines, with different colors and different labels
 ax.plot(df_jm['year'], df_jm['life_expectancy'], color='#333', label='Jamaica') 
@@ -136,7 +136,7 @@ First, let's do a simple vertical column with 2 panels with `plt.subplots(2,1)`.
 
 
 ```python
-df_cb = df.loc[ df['country']=='Cuba', :]
+df_cb = df[df['country']=='Cuba']
 # create plot
 figure, ax = plt.subplots(2,1) # rows by columns
 ax[0].plot(df_jm['year'], df_jm['life_expectancy'])
@@ -198,8 +198,8 @@ If we want to use multiple rows and columns, we now gain another index (`ax[i,j]
 
 
 ```python
-df_us = df.loc[ df['country']=='United States', :]
-df_ca = df.loc[ df['country']=='Canada', :]
+df_us = df[df['country']=='United States']
+df_ca = df[df['country']=='Canada']
 
 figure, ax = plt.subplots(2,2, sharex=True, sharey=True, figsize=(8,8)) # rows by columns
 ax[0,0].plot(df_jm['year'], df_jm['life_expectancy'])
@@ -244,7 +244,7 @@ for i in range(nrow): # i goes from 0 - 2
     for j in range(ncol): # j goes from 0 - 2
         
         country = countries[i][j]
-        df_sub = df.loc[ df['country']==country, :]
+        df_sub = df[ df['country']==country]
         
         ax[i,j].plot(df_sub['year'], df_sub['life_expectancy'], color='#333') 
         ax[i,j].set_xlabel('Year')
@@ -322,7 +322,7 @@ for i in range(nrow): # i goes from 0 - 2
     for j in range(ncol): # j goes from 0 - 2
         
         country = countries[i][j]
-        df_sub = df.loc[ df['country']==country, :]
+        df_sub = df[df['country']==country]
         
         ax[i,j].plot(df_sub['year'], df_sub['life_expectancy'], color='#333') 
         ax[i,j].set_xlabel('Year')

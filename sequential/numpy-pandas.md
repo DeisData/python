@@ -933,16 +933,14 @@ Print out the summary statistics for columns `age5_surviving`, `gdp_per_day`, an
 
 ### Subset by row
 
-Sometimes, we want to create a subset of the main data frame based on certain conditions. We do this by using `df.loc` and specifying a condition for the rows. 
-
-Below, we take all of the rows where `babies_per_woman` is greater or equal to 4 with `df['babies_per_woman'] >= 4` and assign this to a new data frame.
+Sometimes, we want to create a subset of the main data frame based on certain conditions. Below, we take all of the rows where `babies_per_woman` is greater or equal to 4 with `df['babies_per_woman'] >= 4` and assign this to a new data frame.
 
 To check that this was done correctly, we can look at the minimum of the `babies_per_woman` column in the new data frame with  `.min()`.
 
 
 ```python
 # take all rows where babies_per_woman is greater or equal to 4 and make a new data frame
-df_4 = df.loc[df['babies_per_woman'] >= 4, :]
+df_4 = df[df['babies_per_woman'] >= 4]
 df_4['babies_per_woman'].min()
 ```
 
@@ -964,7 +962,7 @@ We can also subset with categorical variables. Here, we take all rows where the 
 
 
 ```python
-df_hungary = df.loc[df['country'] == 'Hungary', :]
+df_hungary = df[df['country'] == 'Hungary']
 pd.unique(df_hungary['country'])
 ```
 
