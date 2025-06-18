@@ -1,6 +1,5 @@
 # Introduction to Python (1): Questions
 
-\
 
 ## Question 1. Do it yourself! Coding
 
@@ -14,13 +13,35 @@ message = ''
 print(message)
 ```
 
-\
+<details>
+<summary>Solution</summary>
+
+```python
+message = 'hello world!'
+
+
+print(message)
+```
+
+</details>
+
+
 
 ## Question 2: Math calculations
 
 Calculate the following value in Python: $\frac{25}{(35 - 3)^3}$
 
-\
+<details>
+<summary>Solution</summary>
+
+Remember to include parentheses when needed, but Python also follows standard order of operations.
+
+```python
+25/(35-3)**3
+```
+
+</details>
+
 
 ## Question 3. Swapping Values
 Given the code below, what is the value of the variable `swap` by the end of the block?
@@ -33,7 +54,17 @@ x = y
 y = swap
 ```
 
-\
+<details>
+<summary>Solution</summary>
+
+The only statements here that effect the value of `swap` are `x = 1.0` and `swap = x`.
+
+```
+1.0
+```
+
+</details>
+
 
 ## Question 4: Assigning variables
 
@@ -45,7 +76,18 @@ a = 25
 # write your code here:
 ```
 
-\
+<details>
+<summary>Solution</summary>
+
+We can use variable a to assign value of `a-5` to `b`.
+
+```python
+a = 25
+b = a - 5
+print(b)
+```
+
+</details>
 
 
 ## Question 5: Errors
@@ -58,69 +100,104 @@ last_name = Montoya
 print(last_name)
 ```
 
-\
+<details>
+<summary>Solution</summary>
+
+We receive a `NameError` because we have not defined the varable `Montoya` previously. You may also see additional text describing more details about the error, such as where it occurred.
+
+```
+NameError: name 'Montoya' is not defined
+```
+
+
+</details>
+
 
 ## Question 6: Variable type
-Choose a type (int, float, str) that each of these descriptions should be:
+Choose a type (`int`, `float`, `str`) that each of these descriptions should be:
 - Time elapsed from the start of the year until now in days.
 - Serial code of a piece of lab equipment
 - A lab specimen's age
 
-\
+<details>
+<summary>Solution</summary>
 
-## Question 7: Variable conversion
+1. `int` if only considering full days, `float` otherwise.
 
-```python
-first = 1.0
-second = "1"
-third = "1.1"
-```
+2. `str`: Identifiers can often have letters or leading zeros.
 
-Which of the following will return the floating point number `2.0`?
+3. Depends on the specimen. If using countable units, `int`, otherwise `float`.
 
-```python
-# first + float(second) # choice a
-# float(second) + float(third) # choice b
-# first + int(third) # choice c
-# first + int(float(third)) # choice d
-# int(first) + int(float(third)) # choice e
-# 2.0 * second # choice f
-```
+</details>
 
-\
 
-## Question 8: Making a list
+## Question 7: Making a list
 
 
 Create a small grocery list as a Python list of strings. Using indexing, print the third item in the list.
 
-\
+<details>
+<summary>Solution</summary>
 
-## Question 9: Appending
+```python
+grocery_list = ['cereal', 'bread', 'pasta']
+print(grocery_list[2])
+```
+
+</details>
+
+
+## Question 8: Appending
 Create a list of numbers. Add the first number in the list to the last number of the list. Append this value to the list.
 
-\
+<details>
+<summary>Solution</summary>
+
+```python
+num_list = [25, 50, 75, 100]
+num_list.append( num_list[0] + num_list[-1] )
+```
+
+</details>
 
 
-## Question 10: Grocery dictionary
+## Question 9: Grocery dictionary
 
 
 Make a dictionary where the keys are the names of the items in your grocery list, and the values are the expected cost of the item.
 
-\
+<details>
+<summary>Solution</summary>
 
-## Question 11: Dictionary modification
+Feel free to add as many items as you would like. Dictionaries can be arbitrarily large. 
+
+```python
+grocery_dict = {'cereal':5.0, 'bread':3.0, 'pasta':1.0}
+```
+
+</details>
+
+
+## Question 10: Dictionary modification
 Assign the value of `giraffes` in `animal_dict` to a new key `rabbit` in the same dictionary.
 
-\
+<details>
+<summary>Solution</summary>
+
+Assigning dictionary values of different keys can be tricky. Remember to have write key on the right side.
+
+```python
+animal_dict['rabbit'] = animal_dict['giraffe']
+```
+
+</details>
+
 
 ---
 
-\
 
 # **Challenge questions**
 
-\
 
 ## 1) Quadratic formula
 
@@ -142,9 +219,27 @@ Create variables $a$, $b$, and $c$ with the value of $4$, $-25$, and $20$, respe
 
 Calculate the values of $x$ for a quadratic equation with $a=4$, $b=-25$, and $c = 20$. Remember to calculate the values for both plus and minus ($\pm$).
 
-\
+## 2) Variable conversion
 
-## 2) Nested structures
+```python
+first = 1.0
+second = "1"
+third = "1.1"
+```
+
+Which of the following will return the floating point number `2.0`?
+
+```python
+# first + float(second) # choice a
+# float(second) + float(third) # choice b
+# first + int(third) # choice c
+# first + int(float(third)) # choice d
+# int(first) + int(float(third)) # choice e
+# 2.0 * second # choice f
+```
+
+
+## 3) Nested structures
 
 
 We want to store information regarding the ecological community in the local area.
